@@ -1,0 +1,58 @@
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.board {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  width: calc(33vw - 70px);
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3,
+h4 {
+  text-align: center; 
+}
+h2 {
+  color: #2786eb;
+}
+.add-card-button {
+  display: block;
+  margin: 10px auto 0 auto;
+  font-size: 30px;
+  color: white;
+  background-color: #419dff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px; 
+  transition: transform 0.2s; 
+}
+
+.add-card-button:hover {
+  background-color: #2786eb; 
+  transform: scale(1.1); 
+}
+
+.no-boards-text {
+  color: #2786eb;
+  margin: 10px auto 0 auto;
+  font-size: larger;
+  font-weight: bold;
+  animation: fadeInUp 0.5s ease-in-out;
+}

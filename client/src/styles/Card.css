@@ -1,0 +1,89 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.card {
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  padding: 16px; 
+  margin: 10px 0; 
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+  animation: fadeIn 0.3s ease-in;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02); 
+}
+
+.card.remove {
+  animation: fadeOut 0.3s ease-out;
+  opacity: 0;
+  transform: scale(0.95);
+}
+.card h4 {
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+.card-edit,
+.card-view {
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-edit input,
+.card-edit textarea {
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 8px; 
+  margin-bottom: 10px; 
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.card-buttons button {
+  margin-left: 10px; 
+  background-color: #e6f2ff; 
+  border: 1px #2576ce solid;
+  border-radius: 4px; 
+  padding: 4px 6px; 
+  cursor: pointer;
+  transition: background-color 0.2s; 
+}
+
+.card-buttons button:hover {
+  background-color: #c6e1ff; 
+}
+
+.card-view p {
+  white-space: pre-wrap; 
+  word-break: break-word; 
+  margin: 0 0 10px 0;
+}

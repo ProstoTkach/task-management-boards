@@ -1,0 +1,79 @@
+body {
+  user-select: none; 
+}
+
+.board-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px; 
+}
+.top-bar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.top-bar button,
+.delete-button {
+  height: 40px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #419dff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s; 
+}
+
+.top-bar button:hover {
+  background-color: #2786eb; 
+  transform: scale(1.05); 
+}
+
+.search-form {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+}
+
+.search-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; 
+}
+
+.search-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.board-columns {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%; 
+  max-width: 1200px;
+  min-height: 300px;
+}
+
+.board-columns > div {
+  flex: 1; 
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #f8f9fa; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.delete-button {
+  display: block;
+  background-color: #e66262;
+  margin: 10px auto 0 auto;
+}
+.delete-button:hover {
+  background-color: #c73b3b;
+  transform: scale(1.05);
+}
